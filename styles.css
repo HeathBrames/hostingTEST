@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+}
+
+
+
+
+
+
+.hero-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-image: url(images/coffeeHeader.jpg);
+    background-size: cover;
+    background-position:  center;
+    background-repeat: none;
+
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+}
+
+.hero-text{
+    text-align: center;
+}
+
+.hero-text h1{
+    display: block;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 9vw;
+}
+
+.hero-text a{
+    text-decoration: none;
+    color: white;
+}
+
+.cta{
+    display: inline-block;
+    padding: .5rem .6rem;
+    margin-top: 1vh;
+
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+
+    transition: .2s ease-in;
+    transition-property: background-color, color;
+
+    font-family: 'Questria', sans-serif;
+    font-size: 1.3vw;
+}
+
+.cta:hover{
+    background-color: rgb(141, 115, 76, 0.5);
+}
+
+.mission{
+    width: 100%;
+    height: auto;
+    background-color: rgb(190, 166, 133);
+    color: white;
+}
+
+
+@media screen and (max-width: 768px){
+    
+}
