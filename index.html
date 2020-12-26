@@ -6,36 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Heath Brames</title>
+    <title>Coffee Shop</title>
 
 </head>
 
 
 <body>
 
-    
+    <!-------Navbar------->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <a class="navbar-brand d-lg-none" href="#" id="smallLogo"><i class="fas fa-mug-hot"></i></a>
+        
+          <button class="navbar-toggler btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        
+          <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            
+        
+            <a class="navbar-brand d-none d-lg-block" href="index.html" id="bigLogo"></a>
+            <ul class="navbar-nav" id="social-icons">
+              <li class="nav-item" id="social-icon">
+                <a class="nav-link" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item"id="social-icon">
+                <a class="nav-link" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="nav-item"id="social-icon">
+                <a class="nav-link" href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item"id="social-icon">
+                <a class="nav-link" href="https://pinterest.com/"><i class="fab fa-pinterest"></i></a>
+              </li>
+              <li class="nav-item" id="mobile-icons">
+                <a class="nav-link" href="https://pinterest.com/"><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+    </nav>
 
     <!---Hero Section--->
     <div class="hero-container">
         <div class="hero-text">
-            <h1>Heath Brames</h1>
-            <a href="#" type="button" class="cta">Projects</a>
+            <h1>Brookside Café</h1>
+            <a href="#" type="button" class="cta">Menu</a>
+        </div>
+        <div class="drop-arrow">
+            <a href="#"><i class="fas fa-chevron-down"></i></a>
         </div>
     </div>
 
     <!---Mission Statement-->
-    <div class="mission">
-        <h1>Our Mission</h1>
+    <div class="about" id="about">
+      <div class="container">
 
+        <div class="restaurant-info">
+
+          <div class="restaurant-description">
+            
+            <div class="global-headline">
+              <h1 class="headline">Coffee done right</h1>
+            </div>
+
+            <div class="seperator">
+              <div class="line line-left"></div>
+              <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+              <div class="line line-right"></div>
+            </div>
+
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Minus blanditiis nemo, at molestias in eos? 
+              Atque reprehenderit doloremque distinctio, dolorem veniam aperiam rem fuga 
+              praesentium dolor qui, dicta cupiditate eum.  Atque reprehenderit doloremque distinctio, dolorem veniam aperiam rem fuga 
+              praesentium dolor qui, dicta cupiditate eum.
+            </p>
+
+          </div>
+
+          <div class="restaurant-info-img">
+            <img src="images/coffeeAboutV1.jpg" width="100%" alt="Bayside Café">
+          </div>
+
+        </div>
+      
+      </div>
     </div>
 
 
+    <!---Footer-->
+    <footer>
+      <div class="container-fluid padding">
+          <div class="row">
+              <div class="col-md text-center" id="first-footer-section">
+                  <h5>Contact Us</h5>
+                  <p>1234 Apple Street</p>
+                  <p>Mr. Roger's Neighborhood</p>
+                  <p>Phone: (867)-530-900</p>
+                  <p>Email: hdbrames@gmail.com</p>
+              </div>
+              <div class="col-md text-center">
+                  <h5>Hours</h5>
+                  <p>Monday .......... 6AM-5PM</p>
+                  <p>Tuesday .......... 6AM-5PM</p>
+                  <p>Wednesday .......... 6AM-5PM</p>
+                  <p>Thursday .......... 6AM-5PM</p>
+                  <p>Friday .......... 6AM-5PM</p>
+                  <p>Sunday .......... CLOSED</p>
+              </div>
+              <div class="col-md text-center">
+                  <h5>Site Links</h5>
+                  <a href="#"><p>Home</p></a>
+                  <a href="#"><p>About</p></a>
+                  <a href="#"><p>Menu</p></a>
+              </div>
+              <div class="col-12 text-center">
+                  <p>Bayside Café ©2017-2019 All Rights Reserved</p>
+              </div>
+          </div>
+      </div>
 
+    </footer>
 
+    <!--------scripts-------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/85390a3449.js" crossorigin="anonymous"></script>
+    <script src="coffee.js"></script>
 
 </body>
 

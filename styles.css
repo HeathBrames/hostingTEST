@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: none;
 
 }
 
@@ -13,21 +17,102 @@ body{
 }
 
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/*navbar styling*/
+.nav{
+    height: 0px;
+}
+
+.navbar{
+    background-color: transparent;
+    transition: 0.25s ease-in;
+}
+
+.navbar.scrolled{
+    background-color: #4e2a22;
+}
+
+.navbar-brand{
+    text-decoration: none;
+    color: white;
+    font-size: 30px; 
+}
+
+#smallLogo{
+    padding-top: none;
+    padding-left: 15px;
+    padding-right: none;
+}
+
+#bigLogo{
+    padding-right: 23px;
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-toggler-icon{
+    background-color: transparent;
+}
+
+i{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav{
+    margin-left: 10px;
+}
+
+.navbar-nav li{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    letter-spacing: 4px;
+    font-weight: 3px;
+    font-size: 18px;
+}
+
+#social-icons li{
+    padding: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#mobile-icons{
+    display: none;
+}
 
 
 
 
+
+
+
+
+
+/* hero image, hero text, other large-scale styling*/
 .hero-container{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
 
-    background-image: url(images/coffeeHeader.jpg);
+    background-image: url(images/coffeeHeader7.jpg);
     background-size: cover;
-    background-position:  center;
+    background-position: center;
     background-repeat: none;
 
     position: relative;
@@ -53,8 +138,8 @@ body{
 .hero-text h1{
     display: block;
     color: white;
-    font-family: 'Lobster', cursive;
-    font-size: 9vw;
+    font-family: 'Lobster', sans-serif;
+    font-size: 10vw;
 }
 
 .hero-text a{
@@ -64,34 +149,227 @@ body{
 
 .cta{
     display: inline-block;
-    padding: .5rem .6rem;
+    padding: .5rem .7rem;
     margin-top: 1vh;
 
     color: white;
     background-color: transparent;
     border: 1px solid white;
     text-transform: uppercase;
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
 
     transition: .2s ease-in;
     transition-property: background-color, color;
 
-    font-family: 'Questria', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
     font-size: 1.3vw;
 }
 
 .cta:hover{
-    background-color: rgb(141, 115, 76, 0.5);
+    background-color: white;
+    color: black;
 }
 
-.mission{
-    width: 100%;
+.drop-arrow{
+    position: absolute;
+    top: 90%;
+}
+
+.drop-arrow a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vw;
+}
+
+
+
+
+/*about us///mission statement*/
+.about{
     height: auto;
-    background-color: rgb(190, 166, 133);
+    margin: 0;
+}
+
+.global-headline{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.9rem;
+    margin-bottom: 0rem;
+
+}
+
+.discover-our-story .global-headline{
+    margin-top: 6.9rem;
+}
+
+.headline{
+    padding-top: .8vw;
+    padding-bottom: 0vw;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 6vw;
+    margin-bottom: 0;
+}
+
+.global-headline{
+    letter-spacing: 0px;
+    line-height: .45;
+}
+
+.restaurant-info{
+    text-align: center;
+}
+
+.seperator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.line{
+    width: 100%;
+    max-width: 7vw;
+    height: .10rem;
+    background-color: black;
+    position: relative;
+}
+
+.asterisk i{
+    margin: 0 1vw;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.restaurant-description{
+    margin-bottom: 3rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: .1;
+    letter-spacing: 1px;
+}
+
+.restaurant-description p{
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+footer{
+    margin-top: 7vw;
+    background-color: #201c19;
+    color: #f7f7f7;
+    padding-top: 1.5vw;
+    text-transform: uppercase;
+}
+
+.col-md{
+    margin-bottom: 20px;
+}
+
+.container-fluid p{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.container-fluid a{
+    text-decoration: none;
     color: white;
 }
 
-
-@media screen and (max-width: 768px){
+.container-fluid a:hover{
+    content: "";
+    position: relative;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid white;
+    transition: 0.3s ease;
+}
     
+.container-fluid:hover:after {
+    width: 100%;
+}
+
+.container-fluid h5{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+}
+
+.container-fluid h3{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media screen and (max-width: 992px){
+    .navbar ul li a{
+        text-align: center;
+        color: white;
+    }
+
+    #social-icon{
+        display: none;
+    }
+
+    #social-icons li{
+        padding: none;
+    }
+
+    #mobile-icons{
+        display: block;
+        padding: 10px;
+    }
+
+    #mobile-icons a i{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar.scrolled{
+        background-color: #4e2a22;
+    }
+
+    .headline{
+        font-size: 7vw;
+    }
+    .restaurant-description{
+        font-size: 3.25vw;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .cta{
+        font-size: 2vw;
+    }
+
+    #first-footer-section{
+        margin-top: 20px;
+    }
+
+    .navbar-nav li{
+        padding: 5px;
+    }
+
 }
